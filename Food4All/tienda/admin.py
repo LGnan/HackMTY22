@@ -10,3 +10,4 @@ class ProductoAdmin(admin.ModelAdmin):
     
 admin.site.register(CategoriaProd, CategoriaProdAdmin)
 admin.site.register(Producto, ProductoAdmin)
+
