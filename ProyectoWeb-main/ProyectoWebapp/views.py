@@ -13,7 +13,5 @@ def home(request):
     
     return render(request, "ProyectoWebapp/home.html")
 
-def tienda(request):
-    
-    return render(request, "ProyectoWebapp/tienda.html")
+
 
