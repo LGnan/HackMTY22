@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'contacto',
     'tienda',
     'carro',
+    "politica",
     'autenticacion',
     'crispy_forms',
     'donaciones',
