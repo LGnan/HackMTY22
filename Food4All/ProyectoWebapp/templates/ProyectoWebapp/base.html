@@ -26,6 +26,15 @@
         <span class="site-heading-lower" style="font-family:georgia,garamond,serif;">Food 4 All</span>
         
       </h1>
+      <div style= "text-align:right; margin-right: 100px; color:white;">
+
+          {% if user.is_authenticated%}
+            Bienvenido, {{user.username}}&nbsp;&nbsp;<a href="{% url 'cerrar_sesion' %}" style="color:white"> Cerrar sesión  </a>
+            {% else %}
+            <a href="autenticacion/logear" style="color:white">Login</a> &nbsp;&nbsp;<a href="{% url 'Autenticacion' %}" style="color:white" > Registrate </a> &nbsp;&nbsp;
+          {% endif %}
+
+      </div> 
 
 
  <!-- Navbar -->
