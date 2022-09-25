@@ -48,7 +48,8 @@ INSTALLED_APPS = [
     "politica",
     'autenticacion',
     'crispy_forms',
-    'donaciones',
+    'donacion',
+    'coche',
 ]
 
 MIDDLEWARE = [
