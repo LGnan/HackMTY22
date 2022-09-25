@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED01AB1628E0B58C00CDC9AD /* ViewControllerseis.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED01AB1528E0B58C00CDC9AD /* ViewControllerseis.swift */; };
 		ED91DFD328E06660008292B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED91DFD228E06660008292B8 /* AppDelegate.swift */; };
 		ED91DFD528E06660008292B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED91DFD428E06660008292B8 /* SceneDelegate.swift */; };
 		ED91DFD728E06660008292B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED91DFD628E06660008292B8 /* ViewController.swift */; };
@@ -17,6 +18,12 @@
 		ED91DFF428E06662008292B8 /* food4allappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED91DFF328E06662008292B8 /* food4allappUITests.swift */; };
 		ED91DFF628E06662008292B8 /* food4allappUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED91DFF528E06662008292B8 /* food4allappUITestsLaunchTests.swift */; };
 		ED91E00328E06708008292B8 /* ViewControllerdos.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED91E00228E06708008292B8 /* ViewControllerdos.swift */; };
+		ED91E00528E0788A008292B8 /* ViewControllertres.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED91E00428E0788A008292B8 /* ViewControllertres.swift */; };
+		ED91E01028E09430008292B8 /* el-pollo-loco-miercolocos.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ED91E00E28E09430008292B8 /* el-pollo-loco-miercolocos.jpeg */; };
+		ED91E01128E09430008292B8 /* papa-index.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ED91E00F28E09430008292B8 /* papa-index.jpeg */; };
+		ED91E01328E0A893008292B8 /* ViewControllercuatro.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED91E01228E0A893008292B8 /* ViewControllercuatro.swift */; };
+		ED91E01528E0A973008292B8 /* 360_F_202787305_kmLiGLKBtT29hdc5e1h4FrAIcJ7M5dPf.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ED91E01428E0A972008292B8 /* 360_F_202787305_kmLiGLKBtT29hdc5e1h4FrAIcJ7M5dPf.jpeg */; };
+		ED91E01728E0AAE4008292B8 /* ViewControllercinco.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED91E01628E0AAE4008292B8 /* ViewControllercinco.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED01AB1528E0B58C00CDC9AD /* ViewControllerseis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerseis.swift; sourceTree = "<group>"; };
 		ED91DFCF28E06660008292B8 /* food4allapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = food4allapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED91DFD228E06660008292B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED91DFD428E06660008292B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +59,12 @@
 		ED91DFF328E06662008292B8 /* food4allappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = food4allappUITests.swift; sourceTree = "<group>"; };
 		ED91DFF528E06662008292B8 /* food4allappUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = food4allappUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		ED91E00228E06708008292B8 /* ViewControllerdos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerdos.swift; sourceTree = "<group>"; };
+		ED91E00428E0788A008292B8 /* ViewControllertres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllertres.swift; sourceTree = "<group>"; };
+		ED91E00E28E09430008292B8 /* el-pollo-loco-miercolocos.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "el-pollo-loco-miercolocos.jpeg"; path = "../../el-pollo-loco-miercolocos.jpeg"; sourceTree = "<group>"; };
+		ED91E00F28E09430008292B8 /* papa-index.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "papa-index.jpeg"; path = "../../papa-index.jpeg"; sourceTree = "<group>"; };
+		ED91E01228E0A893008292B8 /* ViewControllercuatro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllercuatro.swift; sourceTree = "<group>"; };
+		ED91E01428E0A972008292B8 /* 360_F_202787305_kmLiGLKBtT29hdc5e1h4FrAIcJ7M5dPf.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 360_F_202787305_kmLiGLKBtT29hdc5e1h4FrAIcJ7M5dPf.jpeg; path = ../../360_F_202787305_kmLiGLKBtT29hdc5e1h4FrAIcJ7M5dPf.jpeg; sourceTree = "<group>"; };
+		ED91E01628E0AAE4008292B8 /* ViewControllercinco.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllercinco.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +119,14 @@
 				ED91DFD428E06660008292B8 /* SceneDelegate.swift */,
 				ED91DFD628E06660008292B8 /* ViewController.swift */,
 				ED91DFD828E06660008292B8 /* Main.storyboard */,
+				ED01AB1528E0B58C00CDC9AD /* ViewControllerseis.swift */,
+				ED91E01628E0AAE4008292B8 /* ViewControllercinco.swift */,
+				ED91E01228E0A893008292B8 /* ViewControllercuatro.swift */,
+				ED91E00428E0788A008292B8 /* ViewControllertres.swift */,
 				ED91E00228E06708008292B8 /* ViewControllerdos.swift */,
+				ED91E01428E0A972008292B8 /* 360_F_202787305_kmLiGLKBtT29hdc5e1h4FrAIcJ7M5dPf.jpeg */,
+				ED91E00E28E09430008292B8 /* el-pollo-loco-miercolocos.jpeg */,
+				ED91E00F28E09430008292B8 /* papa-index.jpeg */,
 				ED91DFDB28E06662008292B8 /* Assets.xcassets */,
 				ED91DFDD28E06662008292B8 /* LaunchScreen.storyboard */,
 				ED91DFE028E06662008292B8 /* Info.plist */,
@@ -234,9 +255,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED91E01028E09430008292B8 /* el-pollo-loco-miercolocos.jpeg in Resources */,
 				ED91DFDF28E06662008292B8 /* LaunchScreen.storyboard in Resources */,
 				ED91DFDC28E06662008292B8 /* Assets.xcassets in Resources */,
 				ED91DFDA28E06660008292B8 /* Main.storyboard in Resources */,
+				ED91E01128E09430008292B8 /* papa-index.jpeg in Resources */,
+				ED91E01528E0A973008292B8 /* 360_F_202787305_kmLiGLKBtT29hdc5e1h4FrAIcJ7M5dPf.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +288,10 @@
 				ED91DFD728E06660008292B8 /* ViewController.swift in Sources */,
 				ED91DFD328E06660008292B8 /* AppDelegate.swift in Sources */,
 				ED91DFD528E06660008292B8 /* SceneDelegate.swift in Sources */,
+				ED91E01728E0AAE4008292B8 /* ViewControllercinco.swift in Sources */,
+				ED91E01328E0A893008292B8 /* ViewControllercuatro.swift in Sources */,
+				ED91E00528E0788A008292B8 /* ViewControllertres.swift in Sources */,
+				ED01AB1628E0B58C00CDC9AD /* ViewControllerseis.swift in Sources */,
 				ED91E00328E06708008292B8 /* ViewControllerdos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
