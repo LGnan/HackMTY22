@@ -35,4 +35,7 @@ def procesar_pedido(request):
 
 def enviar_mail(**kwargs):
     asunto = "Gracias por el pedido"
-    mensaje = render_to_string
+    mensaje = render_to_string("emails/pedido.html"),{
+        "pedido":kwargs.get("pedido")
+    }
+    
