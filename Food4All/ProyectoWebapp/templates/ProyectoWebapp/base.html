@@ -86,7 +86,8 @@
 	        </a>
 	    </p>
         <p class="m-0 mbt">
-        	<small><a href="sample.html" class="link">Política de privacidad</a> ·
+          <li class="nav-item {% if request.path == '/politica/' %} active {% endif %} px-lg-4"></li>
+        	<small><a href="{% url 'Politica'%}" class="link">Política de privacidad</a> ·
         	<a href="sample.html" class="link">Aviso legal</a> ·
         	<a href="sample.html" class="link">Cookies</a></small>
 		</p>

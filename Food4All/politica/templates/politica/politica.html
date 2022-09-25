@@ -1,0 +1,46 @@
+{% extends "ProyectoWebapp/base.html" %}
+
+{% load static %}
+
+{%  block content %}
+
+<section class="page-section cta" style="font-family:'Times New Roman', Times, serif" style="background-color: #FFF8DC;">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <div class="cta-inner text-center rounded" style="background-color: dodgerblue">
+            <h2 class="section-heading mb-4">
+              <span class="section-heading-lower"  >Terminos y Condiciones
+            </h2>
+            <p class="mb-0" >Estos términos y condiciones de privacidad de datos, uso de cookies y spam establecen los lineamientos y prácticas de protección de datos personales, uso de cookies y spam del sitio web de FOOD 4 ALL 
+                Lea atentamente estos términos y condiciones, ya que le ayudarán a tomar decisiones informadas sobre cómo compartir su información personal con nosotros. Aunque estos términos y condiciones se aplican solo a la información recopilada a través del sitio web, son coherentes con nuestras políticas y prácticas con respecto a la información personal que recibimos.
+                La recogida y tratamiento automatizado de los datos de carácter personal tiene como finalidad el mantenimiento de la relación comercial y el desempeño de tareas de información, formación, asesoramiento y otras actividades propias de Food 4 All
+                Estos datos únicamente serán cedidos a aquellas entidades que sean necesarias con el único objetivo de dar
+                cumplimiento a la finalidad anteriormente expuesta.
+                Los datos descritos en el punto anterior se utilizan con objetivos de difusión de nuestras actividades, proyectos y convocatorias, así como para mantener y cumplir las obligaciones contractuales, legales y de transparencia que exijan algún tipo de comunicación. Parte de los datos se utilizan como referencia para optimizar la pertinencia de los contenidos y para garantizar la integridad, confidencialidad y disponibilidad de la información.
+                Food 4 All no venderá, distribuirá ni arrendará esta información a terceros, excepto de acuerdo con estos términos y condiciones. Para la gestión de la información recopilada
+                
+
+                <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" style="background-color: dodgerblue" id="mainNav">
+                    <div class="container" style="font-family:Georgia, 'Times New Roman', Times, serif;">
+                      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="{% url 'Home'%}">Gestión de Pedidos</a>
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav mx-auto">
+                          <li class="nav-item {% if request.path == '/' %} active {% endif %} px-lg-4">
+                            <a class="nav-link text-uppercase text-expanded" href="{% url 'Home'%}">Regresar a la Pagina</a>
+
+                        </ul>
+                    </div>
+                  </div>
+                </nav>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+{%  endblock  %}
