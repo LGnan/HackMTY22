@@ -19,12 +19,13 @@
         {% for donacion in donaciones %}
         <div class="col-md-3">
             <div id="boxshadow" class="card" style="width: 100%; margin: 5px 5px; border-radius: 25px 25px 25px 25px">
-                <img  style="border-radius:25px 25px 0px 0px"; src={{donacion.imagen.url}} class="card-img-top;">
+                <img style="border-radius:25px 25px 0px 0px" ; src={{donacion.imagen.url}} class="card-img-top;">
                 <div class="card-body" style="text-align: center;">
                     <h2 class="card" style="font-size: 25px;"> {{donacion.nombre}}</h2>
                 </div>
                 <div class="card-footer text-center">
-                    <a href="{% url 'coche:agregar' donacion.id %}" style="font-size: 13px;" class="btn btn sucess "> Agregar al carro</a>
+                    <a href="{% url 'coche:agregar' donacion.id %}" style="font-size: 13px;" class="btn btn sucess ">
+                        Agregar al carro</a>
                 </div>
 
             </div>
@@ -32,7 +33,7 @@
 
         {% endfor %}
     </div>
-    {% endblock %}
+    
     <style>
         #boxshadow {
             border: 1px solid;
@@ -41,4 +42,4 @@
         }
     </style>
 </div>
-    
+{% endblock %}

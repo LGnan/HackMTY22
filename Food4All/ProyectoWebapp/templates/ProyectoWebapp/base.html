@@ -2,48 +2,51 @@
 
 
 <head>
-    <!--CARGA ARCHIVOS -->
+  <!--CARGA ARCHIVOS -->
 
-    {% load static %}
-    
-    <!-- Bootstrap -->
-    <link href="{% static 'ProyectoWebapp/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  {% load static %}
 
-     <!-- Fonts -->
-    
-     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"> 
-     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
-     
+  <!-- Bootstrap -->
+  <link href="{% static 'ProyectoWebapp/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 
-    <!-- Styles -->
-    <link href="{% static 'ProyectoWebapp/css/gestion.css' %}" rel="stylesheet">
+  <!-- Fonts -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+
+  <!-- Styles -->
+  <link href="{% static 'ProyectoWebapp/css/gestion.css' %}" rel="stylesheet">
 </head>
 
 <body> si
 
 
-    <h1 class="site-heading text-center text-white d-none d-lg-block">
-      <img src="{% static 'ProyectoWebapp/img/IconFood4All.png' %}" sizes="(min-width: 600px) 200px, 50vw">
-        <span class="site-heading-lower" style="font-family:georgia,garamond,serif;"text-align="center">Food 4 All</span>
-        
-      </h1>
-     
-      <div style= "text-align:right; margin-right: 100px; color:white;">
+  <h1 class="site-heading text-center text-white d-none d-lg-block">
+    <img src="{% static 'ProyectoWebapp/img/IconFood4All.png' %}" sizes="(min-width: 600px) 200px, 50vw">
+    <span class="site-heading-lower" style="font-family:georgia,garamond,serif;" text-align="center">Food 4 All</span>
 
-          {% if user.is_authenticated%}
-            Bienvenido, {{user.username}}&nbsp;&nbsp;<a href="{% url 'cerrar_sesion' %}" style="color:white"> Cerrar sesión  </a>
-            {% else %}
-            <a href="autenticacion/logear" style="color:white">Login</a> &nbsp;&nbsp;<a href="{% url 'Autenticacion' %}" style="color:white" > Registrate </a> &nbsp;&nbsp;
-          {% endif %}
+  </h1>
 
-      </div> 
+  <div style="text-align:right; margin-right: 100px; color:white;">
+
+    {% if user.is_authenticated%}
+    Bienvenido, {{user.username}}&nbsp;&nbsp;<a href="{% url 'cerrar_sesion' %}" style="color:white"> Cerrar sesión </a>
+    {% else %}
+    <a href="autenticacion/logear" style="color:white">Login</a> &nbsp;&nbsp;<a href="{% url 'Autenticacion' %}"
+      style="color:white"> Registrate </a> &nbsp;&nbsp;
+    {% endif %}
+
+  </div>
 
 
- <!-- Navbar -->
- <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" style="background-color: dodgerblue" id="mainNav">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" style="background-color: dodgerblue" id="mainNav">
     <div class="container" style="font-family:Georgia, 'Times New Roman', Times, serif;">
-      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="{% url 'Home'%}">Gestión de Pedidos</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="{% url 'Home'%}">Gestión de
+        Pedidos</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -66,52 +69,52 @@
           <li class="nav-item {% if request.path == '/donacion/' %} active {% endif %} px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="{% url 'Donacion'%}">Donacion</a>
           </li>
-         
+
         </ul>
       </div>
     </div>
   </nav>
 
   <!--Contenido cambiante-->
-  {%  block content %}
+  {% block content %}
 
-  {%  endblock  %}
-    <!-- Footer -->
-    <footer class="footer text-faded text-center py-5" style="background-color: dodgerblue">
-      <div class="container">
-        <p class="m-0">
-	        <a href="#" class="link">
-	          <span class="fa-stack fa-lg">
-	            <i class="fa fa-circle fa-stack-2x"></i>
-	            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-	          </span>
-	        </a>
-	        <a href="#" class="link">
-	          <span class="fa-stack fa-lg">
-	            <i class="fa fa-circle fa-stack-2x"></i>
-	            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-	          </span>
-	        </a>
-	        <a href="#" class="link">
-	          <span class="fa-stack fa-lg">
-	            <i class="fa fa-circle fa-stack-2x"></i>
-	            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-	          </span>
-	        </a>
-	    </p>
-        <p class="m-0 mbt">
-          <li class="nav-item {% if request.path == '/politica/' %} active {% endif %} px-lg-4"></li>
-        	<small><a href="{% url 'Politica'%}" class="link">Política de privacidad</a> ·
-        	<a href="sample.html" class="link">Aviso legal</a> ·
-        	<a href="sample.html" class="link">Cookies</a></small>
-		</p>
-        <p class="m-0 mbt1">&copy; Food 4 All 2022</p>
-      </div>
-	</footer>
+  {% endblock %}
+  <!-- Footer -->
+  <footer class="footer text-faded text-center py-5" style="background-color: dodgerblue">
+    <div class="container">
+      <p class="m-0">
+        <a href="#" class="link">
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+          </span>
+        </a>
+        <a href="#" class="link">
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+          </span>
+        </a>
+        <a href="#" class="link">
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+          </span>
+        </a>
+      </p>
+      <p class="m-0 mbt">
+        <li class="nav-item {% if request.path == '/politica/' %} active {% endif %} px-lg-4"></li>
+        <small><a href="{% url 'Politica'%}" class="link">Política de privacidad</a> ·
+          <a href="sample.html" class="link">Aviso legal</a> ·
+          <a href="sample.html" class="link">Cookies</a></small>
+      </p>
+      <p class="m-0 mbt1">&copy; Food 4 All 2022</p>
+    </div>
+  </footer>
 
-    <!-- Bootstrap -->
-    <script src="{% static 'ProyectoWebapp/vendor/jquery/jquery.min.js' %}"></script>
-    <script src="{% static 'ProyectoWebapp/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <!-- Bootstrap -->
+  <script src="{% static 'ProyectoWebapp/vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'ProyectoWebapp/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 
 </body>
 
