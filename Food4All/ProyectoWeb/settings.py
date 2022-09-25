@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 import os
 from pathlib import Path
+from django.contrib.messages import constants as mensajes_de_error
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -45,6 +46,8 @@ INSTALLED_APPS = [
     'tienda',
     'carro',
     'autenticacion',
+    'crispy_forms',
+    'donaciones',
 ]
 
 MIDDLEWARE = [
@@ -134,3 +137,22 @@ MEDIA_ROOT = BASE_DIR /'media'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+# configuracion de email
+# configura email
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = "bdelasierrar@gmail.com"
+EMAIL_HOST_PASSWORD = "resnonverba"
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+MESSAGE_TAGS={
+    mensajes_de_error.DEBUG: 'debug',
+    mensajes_de_error.INFO: 'info',
+    mensajes_de_error.SUCCESS: 'sucess',
+    mensajes_de_error.WARNING: 'warning',
+    mensajes_de_error.ERROR: 'danger',
+    
+}
