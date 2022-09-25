@@ -2,45 +2,53 @@
     <thead>
         <tr>
             <th colspan="2" class="text-center">
-                    Carro Compras
+                Carro Compras
             </th>
 
         </tr>
         <tr>
-           <th>
+            <th>
                 Producto
-           </th> 
-           <th>
+            </th>
+            <th>
                 Cantidad
-            </th> 
+            </th>
         </tr>
     </thead>
-    <tbody >
+    <tbody>
         {% if request.session.coche.items %}
-            {% for key,value in request.session.coche.items %}
-                <tr class="text-center">
-                    <td>
-                        {{value.nombre}}
-                    </td>
-                    <td>
-                        {{value.cantidad}}
-                    </td>
-                    <td>
-                        <button style= "background-color:#b3bcfa;"> <a href = "{% url 'coche:agregar' value.donan_id %}" class = "btn btn-sm btn-sucess"> + </a> </button>
-                        <button  style= "background-color:#b3bcfa;"> <a href = "{% url 'coche:restar' value.donan_id %}" class = "btn btn-sm btn-sucess"> - </a></br> </button>
-                    </td>
-                </tr>
-            {% endfor%}
-            {% else %}
-                <tr>
-                    <td colspan="2">
-                        <div class="alert alert-danger text-center">
-                            Sin productos
-                        </div>
+        {% for key,value in request.session.coche.items %}
+        <tr class="text-center">
+            <td>
+                {{value.nombre}}
+            </td>
+            <td>
+                {{value.cantidad}}
+            </td>
+            <td>
+                <button style="background-color:#b3bcfa;"> <a href="{% url 'coche:agregar' value.donan_id %}"
+                        class="btn btn-sm btn-sucess"> + </a> </button>
+                <button style="background-color:#b3bcfa;"> <a href="{% url 'coche:restar' value.donan_id %}"
+                        class="btn btn-sm btn-sucess"> - </a></br> </button>
+            </td>
+        </tr>
+        {% endfor%}
+        {% else %}
+        <tr>
+            <td colspan="2">
+                <div class="alert alert-danger text-center">
+                    Sin productos
+                </div>
 
-                    </td>
-                </tr>
+            </td>
+        </tr>
         {% endif%}
+        <tr>
+            <td colspan="3">
+                <button style="background-color:#b3bcfa;"> <a href="{% url 'coche:limpiar' 0 %}"
+                        class="btn btn-sm btn-sucess"> Enviar </a> </button>
+            </td>
+        </tr>
     </tbody>
-    
+
 </table>

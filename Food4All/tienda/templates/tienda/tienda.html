@@ -23,11 +23,11 @@
                     style="width: 103%; margin: 5px 5px; border-radius: 25px 25px 25px 25px;">
                     <img style="border-radius:25px 25px 0px 0px" ; src={{producto.imagen.url}} class="card-img-top;">
                     <div class="card-body" style="text-align: center;">
-                        <h2 class="card-title"> {{producto.nombre}}</h2>
+                        <h2 class="card" style="font-size: 25px;"> {{producto.nombre}}</h2>
                         <p class="card-text">{{producto.precio}}&nbsp; $</p>
                     </div>
-                    <div class="card-footer text-center">
-                        <a href="{% url 'carro:agregar' producto.id %}" class="btn btn sucess "> Agregar al carro</a>
+                    <div class="card-footer text">
+                        <a href="{% url 'carro:agregar' producto.id %}" style="font-size: 13px;" class="btn btn sucess ">Agregar al carro</a>
                     </div>
                 </div>
             </div>
