@@ -20,11 +20,11 @@ class CategoriaProd(models.Model):
 class Producto(models.Model):
     nombre = models.CharField(max_length = 50)
     categorias = models.ForeignKey(CategoriaProd, on_delete= models.CASCADE)
-    image = models.ImageField(upload_to = "tienda", null = True, blank = True )
+    imagen = models.ImageField(upload_to = "tienda", null = True, blank = True )
     precio = models.FloatField()
     disponibilidad = models.BooleanField(default = True )
     created = models.DateTimeField( auto_now_add = True)
-    updated = models.DateTimeField( auto_now_add = True)
+    updated = models.DateTimeField( auto_now_add = True) 
     
     class Meta:
         verbose_name = "Producto"
