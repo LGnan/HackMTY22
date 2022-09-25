@@ -24,7 +24,7 @@ urlpatterns = [
     path('tienda/', include('tienda.urls')),
     path('carro/', include('carro.urls')),
     path('politica/', include('politica.urls')),
-    # path('donaciones/', include('donaciones.urls')),
+    path('coche/', include('coche.urls')),
     path('autenticacion/', include('autenticacion.urls')),
     path('donacion/', include('donacion.urls')),
     path('',include('ProyectoWebapp.urls')),
