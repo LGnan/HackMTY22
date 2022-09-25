@@ -3,42 +3,54 @@
 
 {% load static %}
 
-{%  block content %}
-   <!-- Heading -->
-   <section class="page-section clearfix">
-    <div class="container">
-      <div class="intro">
-        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static 'ProyectoWebapp/img/principal.jpg' %}" alt="">
-        <div class="intro-text left-0 text-center bg-faded p-5 rounded">
-          <h2 class="section-heading mb-4" >
-            <span class="section-heading-upper">Puntualidad</span>
-            <span class="section-heading-lower">El mejor stock</span>
+{% block content %}
+<!-- Heading -->
+<section class="page-section clearfix">
+  <div class="container" style="font-family:Georgia, 'Times New Roman', Times, serif;">
+    <div class="intro">
+      <img class="intro-img img-fluid mb-3 rounded" src="{% static 'ProyectoWebapp/img/imagen1.jpg' %}" alt="">
+      <pre>
+
+
+        <!--espacio bien prron para que quede con m-->
+
+
+
+      </pre>
+      <div class="intro-text left-0 text-center bg-faded p-5 rounded " style="background-color: #1e90ff">
+        <div class="">
+          <h2 class="section-heading mb-4">
+            <span class="section-heading-upper">Dar para recibir</span>
+            <span class="section-heading-lower">Objetivo</span>
           </h2>
-          <p class="mb-3">En la puertra de tu casa en menos de 48 h con el envío normal. En menos de 24 h con el envío express.
+          <p class="mb-2">Reducir la cantidad de comida que se desperdicia en los restaurantes día a día, aprovechando
+            este exceso para ofrecer comida económica a quienes lo requieran.
           </p>
-         
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-    <!-- Message -->
-    <section class="page-section cta">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-9 mx-auto">
-            <div class="cta-inner text-center rounded">
-              <h2 class="section-heading mb-4">
-                <span class="section-heading-upper">Compromiso total</span>
-                <span class="section-heading-lower">Garantizado</span>
-              </h2>
-              <p class="mb-0">Con más de 75 años de experiencia a nuestras espaldas, desde Gestión de Pedidos tenemos los conocimientos y herramientas necesarios para llevar cualquier objeto a la puerta de su casa con puntualidad y profesionalidad.</p>
-            </div>
-          </div>
+<!-- Message -->
+<section class="page-section cta">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-9 mx-auto">
+        <div class="cta-inner text-center rounded" style="background-color: dodgerblue">
+          <h2 class="section-heading mb-4">
+            <span class="section-heading-lower">Giro del Proyecto
+          </h2>
+          <p class="mb-0">Esta pagina se enfoca en aprovechar los desperdicios de diferentes restuarantes o compañias de comida
+            pues muchas veces estos no se utilizan, por lo que nosostros nos encargaremos de distribuir estos productos, manejandolos
+            en nuestra pagina web, vendiendolos a precios mas economicos, y dandoles un porcentaje a los productores, haciendo que se
+            genere menos desperdicios y la gente pueda tener buena comida a un precio accesible
+          </p>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
 
-    {% endblock %}
-   
+{% endblock %}
