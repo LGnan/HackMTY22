@@ -14,4 +14,3 @@ def home(request):
     return render(request, "ProyectoWebapp/home.html")
 
 
-
