@@ -1,13 +1,13 @@
 //
-//  interfaz_foot4allUITests.swift
-//  interfaz_foot4allUITests
+//  food4allappUITests.swift
+//  food4allappUITests
 //
-//  Created by José Armando Benvenuto Valerdi  on 24/09/22.
+//  Created by José Armando Benvenuto Valerdi  on 25/09/22.
 //
 
 import XCTest
 
-final class interfaz_foot4allUITests: XCTestCase {
+final class food4allappUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

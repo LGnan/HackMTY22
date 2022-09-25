@@ -1,13 +1,13 @@
 //
-//  interfaz_foot4allUITestsLaunchTests.swift
-//  interfaz_foot4allUITests
+//  food4allappUITestsLaunchTests.swift
+//  food4allappUITests
 //
-//  Created by José Armando Benvenuto Valerdi  on 24/09/22.
+//  Created by José Armando Benvenuto Valerdi  on 25/09/22.
 //
 
 import XCTest
 
-final class interfaz_foot4allUITestsLaunchTests: XCTestCase {
+final class food4allappUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
