@@ -47,7 +47,8 @@ INSTALLED_APPS = [
     'carro',
     'autenticacion',
     'crispy_forms',
-    'donaciones',
+    'donacion',
+    'coche',
 ]
 
 MIDDLEWARE = [
