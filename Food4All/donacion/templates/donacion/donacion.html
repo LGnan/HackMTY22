@@ -1,0 +1,39 @@
+
+{% extends "ProyectoWebapp/base.html" %}
+
+{% load static %}
+
+{%  block content %}
+
+<div class= "container">
+    <div style="float:right;">
+        {% if request.user.is_authenticated %}
+        {% include "coche/widg.html" %}
+    {% else %}
+        <div class="alert alert-danger text-center">
+            Debes hacer el login para ver el Carro
+        </div>
+    {% endif%}
+    </div>
+    <div class= "row">
+
+    {% for donacion in donaciones %}
+        <div class= "col-md-3">
+            <div class="card" style= "width: 110%; margin: 5px 5px;">
+                <img src={{donacion.imagen.url}} class ="card-img-top;">
+                    <div class="card-body" style = "text-align: center;">
+                        <h2 class="card-title"> {{donacion.nombre}}</h2>
+            </div>
+            <div class="card-footer text-center">
+                <a href="{% url 'coche:agregar' donacion.id %}" class="btn btn sucess "> Agregar al carro</a>
+            </div>
+            
+        </div>
+    </div>   
+ 
+{% endfor %} 
+</div> 
+{% endblock %}
+
+
+    
