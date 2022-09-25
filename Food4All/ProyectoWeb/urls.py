@@ -23,9 +23,14 @@ urlpatterns = [
     path('contacto/', include('contacto.urls')),
     path('tienda/', include('tienda.urls')),
     path('carro/', include('carro.urls')),
+<<<<<<< HEAD
     path('politica/', include('politica.urls')),
     path('donaciones/', include('donaciones.urls')),
+=======
+    path('coche/', include('coche.urls')),
+>>>>>>> berna
     path('autenticacion/', include('autenticacion.urls')),
+    path('donacion/', include('donacion.urls')),
     path('',include('ProyectoWebapp.urls')),
 ]
 '''
